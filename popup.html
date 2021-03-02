@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Data Getter</title>
+    <meta name="description" content="Quickly copying custom format page data">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h2>Page Data Getter</h2>
+        <span class="version">Version: 0.1</span>
+    </header>
+
+    <div class="form">
+        <div class="row">
+            <input class="elemTemplate" type="text" value="[{title}]({url}) - {description}" readonly>
+            <button class="buttonGet">Get</button>
+        </div>
+        <div class="output">
+            <textarea class="outputTextarea" readonly></textarea>
+            <button class="buttonCopy">Copy</button>
+        </div>
+    </div>
+
+    <details class="fields">
+        <summary>fields</summary>
+        <ul>
+            <li>
+                <pre>{url}</pre>
+            </li>
+            <li>
+                <pre>{title}</pre>
+            </li>
+            <li>
+                <pre>{description}</pre>
+            </li>
+        </ul>
+    </details>
+
+    <div class="fun">
+        <button class="buttonDonate">Donate</button>
+        <p class="elemEmail">latushko.igor@gmail.com</p>
+    </div>
+
+    <script src="script/popup.js"></script>
+</body>
+
+</html>
